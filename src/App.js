@@ -1,27 +1,23 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import { Routes, Route } from 'react-router';
+import LandingPage from './pages/LandingPage';
+import Navigation from './components/Navigation';
+import LeftSidebar from './components/LeftSidebar';
+import Content from './components/Content';
+import RightSidebar from './components/RightSidebar';
 
 function App() {
-  return (
-    <div className="App">
-        
-        <Routes>
-        {/* 
-          IMPORTANTE:
-            Route necesita 2 props para funcionar
-              path = "direccion de la ruta"
-              element = "componente a renderizar"
-         */}
-          <Route path='/' element = {<h1>Landing Page</h1>} />
-          <Route path='/post/:id' element = {<h1> Articulo  </h1>} />
-          <Route path='/login/' element = {<h1> Login  </h1>} />
-          <Route path='/create/' element = {<h1> Crear Post  </h1>} />
-          
-      </Routes>
 
-    </div>
-  );
+    return <>
+    <Navigation/>
+    <main className="main-container">
+      <LeftSidebar/>
+      <Content/>
+      <RightSidebar/>
+    </main>
+    </>
+  
 }
 
 export default App;
