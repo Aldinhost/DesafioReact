@@ -3,7 +3,7 @@ import { FaDev } from "react-icons/fa";
 import { BiMessageRoundedCheck } from "react-icons/bi";
 import {RiNotificationLine} from "react-icons/ri";
 import {useState} from "react";
-
+import {FiSearch} from "react-icons/fi";
 
 const Navigation = () => {
     const [showMenu, setshowMenu] = useState(false)
@@ -15,6 +15,8 @@ const Navigation = () => {
   return (
     <header className="header">
         <div className="headerContainer">
+
+            <div className="headerContainer__hamburgerMenu"></div>
             <a href="dev.to" className="headerContainer__logo" >
                 <FaDev size="3.125rem"/>
             </a>
@@ -26,6 +28,9 @@ const Navigation = () => {
 
             <div className="headerContainer__right">
                 <button>Write post</button>
+                <i className="hidden-search" id="hidden-search">
+                    <FiSearch/>
+                </i>
                 <i>
                     < BiMessageRoundedCheck />
                 </i>
@@ -38,7 +43,7 @@ const Navigation = () => {
             </div>
         </div>
 
-        <div className={showMenu ? "dropdown-menu" : "dropdown-menu-close"}>
+        <div className={showMenu ? "dropdown-menu" : "dropdown-menu-close"} id="dropdown-menu">
             <ul>
                 <li onClick={toggle}>
                     <a href="/profile">
