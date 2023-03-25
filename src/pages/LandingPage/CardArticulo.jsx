@@ -1,68 +1,86 @@
-import { Component } from 'react';
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
+
+import "./CardArticulo.scss";
+import imagen from "./corazon.png"
+
 
 const CardArticulo = (props) =>{
 
-    const { title, cover_image, tag_list, url, comments_count, user, published_at, public_ractions_count, positive_reactions_count } = props.data;
-    
-    console.log("articulo data", props.data)
+    const {_id, title, coverImage, tags } = props.data;
+    console.log(props)
     return(
         <article className='articulo'>
             {
-                cover_image && (
+                 _id === '640151306599f55c6db1f523' && coverImage && (
                     <a 
-                    href={url}
+                    href={'sdasd'}
                     className="articulo__imagen"
-                    style={{backgroundImage: `url(${cover_image})`, }}
                     >
+                        <img src={coverImage} alt="" />
                         &nbsp;
                     </a>
             )}
     
             <div className='articulo_detalles'>
-                <div className="u-pic">
-                    <img src={user.profile_image_90} alt="imagen de perfil" />
+                <div className="user_image">
+                    <img src="user.jpg" alt="imagen de perfil" />
                 </div>
-                <div className='u-datails'>
-                    <a href={`http://dev.to/${user.username}`}>
-                        <span className='u-name'> {user.username} </span>
+                <div className='user_datails'>
+                    <a href={`asas`}>
+                        <span className='user-name'> Aldo Mardel </span>
                     </a>
-                    <a href={url}>
+                    <a href={`asas`}>
                         <span className='time'> Marzo 24 (3 days ago ) </span>
                     </a>
-                    <a href={url}>
-                        <h3> {title} </h3>
+                    <a href={`asas`}>
+                        <h3 className="titulo_articulo"> {title} </h3>
                     </a>
                     <div className='tags'>
                         {
-                            tag_list.map((tag,id)=>{
+                            tags.map((tag,id)=>{
                                 return(
                                     <a key={id} href={`http://dev.to/t/${tag}`}>
                                         <span className="tag">
-                                            #{tag}
+                                            #{`${tag} `}
                                         </span>
                                     </a>
                                 )
                             })
                         }
                     </div>
-                    <div className="detalles">
-                        <div className="reacciones">
+
+                    <div className="interacciones">
+                        <div className="reactions">
                             {
-                                public_ractions_count + positive_reactions_count > 0 && (
-                                    <a href={url}>
+                                    <a href={'adasd'}>
                                         <span>
-                                            <i>
-                                                icono
-                                            </i>
+                                                <img src={imagen} alt="icono me gusta" />
                                             &nbsp;
-                                            {positive_reactions_count + positive_reactions_count}
+                                            12
+                                            <span className='hidden-mobile'> reacciones</span>
                                         </span>
                                     </a>
-                                )
+                                
                             }
+
+                                    <a href={'adasd'}>
+                                        <span>
+                                            <img src="comments.png" alt="icono comments" />
+                                            &nbsp;
+                                            
+                                            <span>3
+                                            <span className='hidden-mobile'> comentarios</span>
+                                            </span> 
+                                        </span>
+                                    </a>
+
+                                    <div className='save'>
+                                        <span>3 min read</span>
+                                        <img src="marcador.png" alt="icono marcador" />                  
+                                    </div>
                         </div>
+
+
+
                     </div>
                 </div>
             </div>
@@ -71,26 +89,3 @@ const CardArticulo = (props) =>{
 }
 
 export default CardArticulo;
-
-
-
-
-
-
-
-
-// function CardArticulo() {
-//     return (
-//       <Card >
-//         <Card.Img variant="top" src="holder.js/100px180" />
-//         <Card.Body>
-//           <Card.Title>Card Title</Card.Title>
-//           <Card.Text>
-//             Some quick example text to build on the card title and make up the
-//             bulk of the card's content.
-//           </Card.Text>
-//           <Button variant="primary">Go somewhere</Button>
-//         </Card.Body>
-//       </Card>
-//     );
-//   }

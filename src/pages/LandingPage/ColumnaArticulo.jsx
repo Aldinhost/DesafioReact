@@ -9,7 +9,7 @@ const ColumnaArticulo = () =>{
     useEffect(()=>{
 
         setTimeout( async () => {
-            const response = await fetch("https://dev.to/api/articles");
+            const response = await fetch("https://backendchallengekodemia-production.up.railway.app/api/v1/posts");
             const data = await response.json();
 
             setArticulo(data);
