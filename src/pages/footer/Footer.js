@@ -1,4 +1,5 @@
 import React from 'react';
+import LeafImg from '../../images/leaf.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export const Footer = () => {
@@ -21,7 +22,7 @@ export const Footer = () => {
                 </p>
                 <div class="mb-5">
                     <a class="logoContainer" href="/" role="button">
-                        <img src="../images/leaf.svg" alt="logo"/>
+                        <img src={LeafImg} alt="logo"/>
                     </a>
                 </div>
             </footer>
