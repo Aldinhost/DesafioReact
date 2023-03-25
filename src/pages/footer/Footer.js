@@ -1,6 +1,8 @@
 import React from 'react';
+
 import LeafImg from '../../images/leaf.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './Footer.scss';
 
 export const Footer = () => {
     return (
