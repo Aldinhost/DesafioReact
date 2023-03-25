@@ -1,6 +1,8 @@
 
 
 @media only screen and (max-width: 768px){
+
+
     .header .headerContainer{
         &__hamburgerMenu{
             display: flex;
@@ -18,6 +20,9 @@
                 display: none;
             }
         }
+    }
+    .leftBar {
+        display: none;
     }
 }
 

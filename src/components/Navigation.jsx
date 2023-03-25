@@ -5,7 +5,7 @@ import {RiNotificationLine} from "react-icons/ri";
 import {useState} from "react";
 import {FiSearch} from "react-icons/fi";
 
-const Navigation = () => {
+const Navigation = (props) => {
     const [showMenu, setshowMenu] = useState(false)
 
     const toggle = () =>{
@@ -16,7 +16,7 @@ const Navigation = () => {
     <header className="header">
         <div className="headerContainer">
 
-            <div className="headerContainer__hamburgerMenu"></div>
+            <div className="headerContainer__hamburgerMenu" onClick={()=> props.openMenu()}></div>
             <a href="dev.to" className="headerContainer__logo" >
                 <FaDev size="3.125rem"/>
             </a>

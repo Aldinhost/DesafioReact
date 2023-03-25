@@ -46,6 +46,17 @@ ul {
     list-style: none;
 }
 
+.overlay{
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
 .main-container {
     height: 100vh;
     width: 100%;
