@@ -1,10 +1,11 @@
-@import "./sass/variables";
-@import "./sass/articleComponent";
-@import "./sass/articleSkeleton";
-@import "./sass/cardcomponent";
-@import "./sass/content";
-@import "./sass/default";
-@import "./sass/leftSidebar";
-@import "./sass/mediaQueries";
-@import "./sass/navigation";
-@import "./sass/rightSidebar";
+@import "./components/LeftSidebar/leftSidebar";
+@import "./components/Navigation/navigation";
+@import "./Styles/variables.scss";
+
+
+
+body{
+        background-color: $grey-background;
+        font-family: $font-sans-serif;
+
+}

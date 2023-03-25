@@ -1,6 +1,6 @@
 import React from 'react'
-import Navigation from '../components/Navigation'
-import RightSidebar from '../components/RightSidebar'
+import Navigation from '../components/Navigation/Navigation'
+import RightSidebar from '../components/RightSidebar/'
 import LeftSidebar from '../components/LeftSidebar'
 
 function LandingPage() {
