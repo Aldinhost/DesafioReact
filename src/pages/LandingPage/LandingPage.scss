@@ -1,12 +1,12 @@
 @import "../../Styles/variables.scss";
 
+
 .page-container{
     padding: 1rem;
     margin: 0 auto;
 
     .page__leftColumn{
         width: 25%;
-        background-color: yellow;
     }
 
     .page__centerColumn{
@@ -20,7 +20,6 @@
 
     .page__rightColumn{
         width: 25%;
-        background-color: blue;
     }
 }
 
