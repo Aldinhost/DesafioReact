@@ -1,4 +1,5 @@
 import React from "react";
+import { Footer } from "../footer/Footer";
 import "./LandingPage.scss";
 
 const LandingPage = () => {
@@ -10,7 +11,7 @@ const LandingPage = () => {
         <section className="page__centerColumn">b</section>
         <section className="page__rightColumn">c</section>
       </section>
-      <p>Soy Footer</p>
+      <Footer />
     </>
   );
 };
