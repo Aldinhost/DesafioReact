@@ -7,12 +7,10 @@
 
     .page__leftColumn{
         width: 25%;
-        background-color: yellow;
     }
 
     .page__centerColumn{
         width: 48%;
-        background-color: red;
         .tabContainer{
             &:hover{
                 cursor: pointer;
@@ -22,7 +20,6 @@
 
     .page__rightColumn{
         width: 25%;
-        background-color: blue;
     }
 }
 
