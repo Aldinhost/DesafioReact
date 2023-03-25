@@ -237,8 +237,8 @@ const LeftSidebar = (props) => {
             <div className="hamburger__content__items">
               <nav className="leftBar__menu">
                 <ul>
-                  <li>
-                    <a href="/home">
+                  <li className="burger-li">
+                    <a href="/home" className="burger-li">
                       <i>
                         <FcHome />
                       </i>
@@ -246,7 +246,7 @@ const LeftSidebar = (props) => {
                     </a>
                   </li>
                   <li>
-                    <a href="/reading">
+                    <a href="/reading" className="burger-li">
                       <i>
                         <FcReading />
                       </i>
@@ -254,7 +254,7 @@ const LeftSidebar = (props) => {
                     </a>
                   </li>
                   <li>
-                    <a href="/list">
+                    <a href="/list" className="burger-li">
                       <i>
                         <FcTodoList />
                       </i>
@@ -262,7 +262,7 @@ const LeftSidebar = (props) => {
                     </a>
                   </li>
                   <li>
-                    <a href="/podcast">
+                    <a href="/podcast" className="burger-li">
                       <i>
                         <AiFillAudio />
                       </i>
@@ -270,7 +270,7 @@ const LeftSidebar = (props) => {
                     </a>
                   </li>
                   <li>
-                    <a href="/videos">
+                    <a href="/videos" className="burger-li">
                       <i>
                         <FcVideoCall />
                       </i>
@@ -279,7 +279,7 @@ const LeftSidebar = (props) => {
                   </li>
 
                   <li>
-                    <a href="/tags">
+                    <a href="/tags" className="burger-li">
                       <i>
                         <FaTags />
                       </i>
@@ -296,7 +296,7 @@ const LeftSidebar = (props) => {
 
                   <div className={more ? "list" : "list hidden"}>
                     <li>
-                      <a href="/code">
+                      <a href="/code" className="burger-li">
                         <i>
                           <FcAbout />
                         </i>
@@ -304,7 +304,7 @@ const LeftSidebar = (props) => {
                       </a>
                     </li>
                     <li>
-                      <a href="/FAQ">
+                      <a href="/FAQ" className="burger-li">
                         <i>
                           <FcIdea />
                         </i>
@@ -312,7 +312,7 @@ const LeftSidebar = (props) => {
                       </a>
                     </li>
                     <li>
-                      <a href="/DEV">
+                      <a href="/DEV" className="burger-li">
                         <i>
                           <FcShop />
                         </i>
@@ -320,7 +320,7 @@ const LeftSidebar = (props) => {
                       </a>
                     </li>
                     <li>
-                      <a href="/sponsers">
+                      <a href="/sponsers" className="burger-li">
                         <i>
                           <FcLike />
                         </i>
@@ -328,7 +328,7 @@ const LeftSidebar = (props) => {
                       </a>
                     </li>
                     <li>
-                      <a href="/about">
+                      <a href="/about" className="burger-li">
                         <i>
                           <FaDev />
                         </i>
@@ -336,7 +336,7 @@ const LeftSidebar = (props) => {
                       </a>
                     </li>
                     <li>
-                      <a href="/privacy">
+                      <a href="/privacy" className="burger-li">
                         <i>
                           <FcBriefcase />
                         </i>
@@ -345,7 +345,7 @@ const LeftSidebar = (props) => {
                     </li>
 
                     <li>
-                      <a href="/terms">
+                      <a href="/terms" className="burger-li">
                         <i>
                           <FcDisclaimer />
                         </i>
@@ -353,7 +353,7 @@ const LeftSidebar = (props) => {
                       </a>
                     </li>
                     <li>
-                      <a href="/contact">
+                      <a href="/contact" className="burger-li">
                         <i>
                           <FcBusinessContact />
                         </i>
