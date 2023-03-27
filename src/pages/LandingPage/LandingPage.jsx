@@ -21,7 +21,9 @@ const LandingPage = () => {
         <section className="page__leftColumn">
         <LeftSidebar burgerMenu={mobileMenu} closeMenu={toggle}/>
         </section>
-        <section className="page__centerColumn">< ColumnaArticulo/></section>
+        <section className="page__centerColumn">
+          < ColumnaArticulo/>
+        </section>
         
         <section className="page__rightColumn">
           <Rightaside />
