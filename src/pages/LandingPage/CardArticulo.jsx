@@ -12,7 +12,7 @@ const CardArticulo = (props) =>{
             {
                  _id === '640151306599f55c6db1f523' && coverImage && (
                     <a 
-                    href={'sdasd'}
+                    href={`/post/${_id}`}
                     className="articulo__imagen"
                     >
                         <img src={coverImage} alt="" />

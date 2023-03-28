@@ -17,7 +17,7 @@ const Navigation = (props) => {
         <div className="headerContainer">
 
             <div className="headerContainer__hamburgerMenu" onClick={()=> props.openMenu()}></div>
-            <a href="dev.to" className="headerContainer__logo" >
+            <a href="/" className="headerContainer__logo" >
                 <FaDev size="3.125rem"/>
             </a>
             <div className="headerContainer__searchBox">
