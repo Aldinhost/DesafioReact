@@ -5,6 +5,7 @@ import './App.scss';
 import { Routes, Route } from 'react-router';
 import LandingPage from './pages/LandingPage/LandingPage';
 import DetallesPost from './pages/DetallesPost/DetallesPost';
+import CreatePost from './pages/CreatePost/CreatePost';
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
           <Route path='/' element = {<LandingPage />} />
           <Route path='/post/:id' element = {<DetallesPost />} />
           <Route path='/login/' element = {<h1> Login  </h1>} />
-          <Route path='/create/' element = {<h1> Crear Post  </h1>} />
+          <Route path='/create/' element = {<CreatePost />} />
           
       </Routes>
     </main>
