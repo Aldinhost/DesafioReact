@@ -5,6 +5,7 @@ import "./LandingPage.scss";
 import Navigation from '../../components/Navigation/Navigation';
 import LeftSidebar from "../../components/LeftSidebar/LeftSidebar";
 import {useState} from "react";
+import { Rightaside } from "../../components/Rightaside/Rightaside";
 
 const LandingPage = () => {
   const [mobileMenu, setmobileMenu] = useState(false);
@@ -20,9 +21,13 @@ const LandingPage = () => {
         <section className="page__leftColumn">
         <LeftSidebar burgerMenu={mobileMenu} closeMenu={toggle}/>
         </section>
-        <section className="page__centerColumn">< ColumnaArticulo/></section>
+        <section className="page__centerColumn">
+          < ColumnaArticulo/>
+        </section>
         
-        <section className="page__rightColumn">c</section>
+        <section className="page__rightColumn">
+          <Rightaside />
+        </section>
       </section>
       <Footer />
     </>
