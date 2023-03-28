@@ -31,7 +31,7 @@ const CardArticulo = (props) =>{
                     <a href={`asas`}>
                         <span className='time'> Marzo 24 (3 days ago ) </span>
                     </a>
-                    <a href={`asas`}>
+                    <a href={`/post/${_id}`}>
                         <h3 className="titulo_articulo"> {title} </h3>
                     </a>
                     <div className='tags'>

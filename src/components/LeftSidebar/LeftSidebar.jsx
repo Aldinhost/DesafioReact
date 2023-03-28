@@ -19,7 +19,6 @@ import { RiInstagramFill, RiTwitchLine } from "react-icons/ri";
 import { CgShapeHexagon } from "react-icons/cg";
 import { GrFormClose } from "react-icons/gr";
 import {useState} from "react";
-import {setmore} from "react";
 
 const tags = [
   "react",

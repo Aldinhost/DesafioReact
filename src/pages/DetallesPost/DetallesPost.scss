@@ -1,0 +1,27 @@
+@import '../../Styles/variables.scss';
+
+
+.articleContainer {
+    background-color: $grey-background;
+
+    .page__leftColumn {
+        display: flex;
+        justify-content: flex-end;
+
+        .interactions {
+
+            .icon {
+
+                svg {
+                    font-size: 1.3rem;
+                }
+            }
+
+            p {
+                text-align: center;
+            }
+
+
+        }
+    }
+}
