@@ -7,6 +7,7 @@ import './CreatePost.scss';
 const CreatePost = () => {
 
     const [infoPost, setInfoPost] = useState({title: '', content: '', coverImage: '', tags: []});
+    const [postSucces, setPostSucces] = useState(false);
     const apiURL = 'https://backendchallengekodemia-production.up.railway.app/api/v1/posts';
 
 
@@ -14,6 +15,7 @@ const CreatePost = () => {
         event.preventDefault();
         if (!validaCampos(infoPost)){
             postData(apiURL, infoPost)
+            setPostSucces(true);
         }
         else{
             console.log('Informacion incorrecta');
@@ -134,9 +136,10 @@ const CreatePost = () => {
 
                         <textarea placeholder="  Describe yourself here..." id="inputContent" rows="9" value={infoPost.content} onChange={handleChangeContent} ></textarea>
                     </div>
-                    <div className="alert alert-success ocultarAlerta" role="alert" id="alertaCreacion">
+                    {postSucces && 
+                    <div className="alert alert-success" role="alert" id="alertaCreacion">
                         Se creo el articulo !!
-                    </div>
+                    </div>}
                     <button className="btn btn-primary mt-3 publishBtn" type="submit">Publish</button>
 
                 </form>
