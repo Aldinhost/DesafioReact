@@ -27,7 +27,7 @@ const Navigation = (props) => {
             </div>
 
             <div className="headerContainer__right">
-                <button>Write post</button>
+                <a className='createBtn' href="/create/">Write post</a>
                 <i className="hidden-search" id="hidden-search">
                     <FiSearch/>
                 </i>

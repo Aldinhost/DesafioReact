@@ -14,7 +14,7 @@ const ColumnaArticulo = () =>{
 
             setArticulo(data);
 
-        }, 2000);
+        }, 500);
     },[]);
 
     return (
